@@ -46,7 +46,7 @@ function Detail(props){
 
 function fnGetData(wear,setWear){
   const axios = require('axios');
-  axios.get('https://jurin2.github.io/react-server/serverDate.json')
+  axios.get('https://jurin2.github.io/react-server/serverData.json')
   .then((respons)=>{
     setWear([...wear,...respons.data]);
   })
